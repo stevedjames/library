@@ -181,7 +181,7 @@ $('input[type="file"]').change(function(e) {
     <script src="/js/bootstrap.min.js"></script>
     <script type="text/javascript">
     function validate(){
-        var letters = /^[A-Za-z]+$/;
+        var letters = /^[A-Za-z ]*$/;
         var errorname=document.getElementById("errorname");
         var errorgenre=document.getElementById("errorgenre");
         var booktitle=document.getElementById("booktitle");
@@ -217,7 +217,7 @@ $('input[type="file"]').change(function(e) {
         </script>
         <script type="text/javascript">
             function authorgenre(){
-                var letters = /^[A-Za-z]+$/;
+                var letters = /^[A-Za-z ]*$/;
                 var errorgenre=document.getElementById("errorgenre");
                 var genre=document.getElementById("genre");
                 if(letters.test(genre.value)==1){
